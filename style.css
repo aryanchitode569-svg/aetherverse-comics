@@ -161,18 +161,23 @@ grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
 gap:20px;
 }
 
-.person{
-background:#141d31;
-padding:40px 15px;
-text-align:center;
-border-radius:15px;
-transition:.3s;
-font-weight:bold;
+.person img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:50%;
+    border:3px solid #8f7cff;
+    margin-bottom:15px;
+    transition:0.3s;
 }
 
-.person:hover{
-background:#8f7cff;
-transform:translateY(-8px);
+.person:hover img{
+    transform:scale(1.08);
+}
+
+.person h3{
+    margin-top:10px;
+    font-size:22px;
 }
 
 #universe{
